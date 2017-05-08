@@ -15,6 +15,7 @@ gem "turbolinks", "~> 5"
 
 gem "activeadmin", github: "activeadmin"
 gem "annotate"
+gem "carrierwave", "~> 1.0"
 gem "devise"
 gem "slim"
 
