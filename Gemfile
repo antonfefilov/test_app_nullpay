@@ -17,6 +17,7 @@ gem "activeadmin", github: "activeadmin"
 gem "annotate"
 gem "carrierwave", "~> 1.0"
 gem "devise"
+gem "simple_form"
 gem "slim"
 
 group :development, :test do
