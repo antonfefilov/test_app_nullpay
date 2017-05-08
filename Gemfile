@@ -14,6 +14,7 @@ gem "jquery-rails"
 gem "turbolinks", "~> 5"
 
 gem "activeadmin", github: "activeadmin"
+gem "annotate"
 gem "devise"
 gem "slim"
 
