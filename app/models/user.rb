@@ -21,6 +21,6 @@ class User < ApplicationRecord
   def full_name
     @full_name ||= [first_name, last_name].join " "
 
-    return email if @full_name.blank?
+    @full_name.blank? ? email : @full_name
   end
 end
