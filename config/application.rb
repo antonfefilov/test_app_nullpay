@@ -14,6 +14,9 @@ module Bbltree
     Rails.application.configure do
       # Devise recommendations
       config.action_mailer.default_url_options = { host: ENV["HOST"] }
+
+      # Use Delayed job as a queue service
+      config.active_job.queue_adapter = :delayed_job
     end
   end
 end

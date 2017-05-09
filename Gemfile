@@ -18,7 +18,8 @@ gem "annotate"
 gem "carrierwave", "~> 1.0"
 gem "devise"
 gem "simple_form"
-gem "sidekiq"
+gem "daemons"
+gem "delayed_job_active_record"
 gem "slim"
 
 group :development, :test do
