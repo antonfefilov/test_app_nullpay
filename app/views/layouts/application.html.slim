@@ -9,10 +9,10 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
   body
-    - if notice
-      p.alert.alert-notice= notice
-    - if alert
-      p.alert.alert-warning= alert
-
     .container-fluid
-      = yield
+      = render "navbar"
+
+      .main
+        = render "alert"
+
+        = yield

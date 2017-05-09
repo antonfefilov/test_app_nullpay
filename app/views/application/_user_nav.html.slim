@@ -1,0 +1,7 @@
+- if current_user
+  .navbar-nav
+    li.nav-item.dropdown
+      a.nav-link.dropdown-toggle href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+        b= current_user.full_name
+      .dropdown-menu aria-labelledby="navbarDropdownMenuLink"
+        = link_to "Sign out", destroy_user_session_path, method: :delete, class: "dropdown-item"
