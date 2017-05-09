@@ -58,6 +58,8 @@ group :development do
   # N+1 queries detector
   gem "bullet"
   gem "web-console"
+  # open emails locally in the browser
+  gem "letter_opener"
   gem "listen", "~> 3.0.5"
   gem "foreman", require: false
   gem "slim-rails"
