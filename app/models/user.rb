@@ -17,4 +17,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :validatable
 
   mount_uploader :avatar, AvatarUploader
+
+  def full_name
+    [first_name, last_name].join " "
+  end
 end
