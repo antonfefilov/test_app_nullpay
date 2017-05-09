@@ -20,6 +20,7 @@ gem "devise"
 gem "simple_form"
 gem "daemons"
 gem "delayed_job_active_record"
+gem "prawn"
 gem "slim"
 
 group :development, :test do

@@ -19,6 +19,8 @@ class User < ApplicationRecord
   mount_uploader :avatar, AvatarUploader
 
   def full_name
-    [first_name, last_name].join " "
+    @full_name ||= [first_name, last_name].join " "
+
+    return email if @full_name.blank?
   end
 end
