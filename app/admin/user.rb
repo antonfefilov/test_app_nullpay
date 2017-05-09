@@ -11,6 +11,8 @@ ActiveAdmin.register User do
   end
 
   member_action :report do
+    UserMailer.admin_report(resource).deliver_later
+
     redirect_to :back, notice: "PDF report for this user will be sent to your email."
   end
 end
